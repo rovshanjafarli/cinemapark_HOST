@@ -1,0 +1,53 @@
+.info_advertising_wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+
+    p {
+        text-align: center;
+        font-weight: 600;
+    }
+
+    .neon_red {
+        padding: 10px;
+        border-radius: 20px;
+        border: 0.15em solid hsl(0, 97%, 62%);
+        box-shadow: inset 0px 0px 0.5em 0px hsl(0, 97%, 62%), 0px 0px 0.5em 0px hsl(0, 97%, 62%);
+
+        img {
+            width: 700px;
+            border-radius: 20px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .info_advertising_wrapper {
+        .neon_red {
+            img {
+                width: 490px;
+            }
+        }
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+    .info_advertising_wrapper {
+        .neon_red {
+            img {
+                width: 400px;
+            }
+        }
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    .info_advertising_wrapper {
+        flex-direction: column;
+        gap: 50px;
+    }
+}

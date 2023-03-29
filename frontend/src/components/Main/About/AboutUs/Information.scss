@@ -1,0 +1,50 @@
+.information-section {
+    padding: 50px 0;
+    color: white !important;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+
+    .line,
+    h1 {
+        position: relative;
+        z-index: 2;
+    }
+
+    .information-brief {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        p,
+        span,
+        ul {
+            position: relative;
+            z-index: 2;
+        }
+
+        ul {
+            color: white !important;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 1400px) {
+    .information-section {
+        .information-brief {
+    
+           p{
+            font-size: 16px;
+           }
+        }
+    }
+}
